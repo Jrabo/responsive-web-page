@@ -125,6 +125,7 @@ svg {
     padding-top: 17px;
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: auto;
 }
 
 .left {
@@ -151,7 +152,7 @@ svg {
 }
 
 
-.buttons{
+.button {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -201,6 +202,10 @@ svg {
      font-family: "Bitcount Grid Double", system-ui;
 }
 
+.services {
+    margin: 10px;
+}
+
 .services h1 {
     text-align: center;
     font-size: 30px;
@@ -210,7 +215,6 @@ svg {
     -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
-
 }
 
 /* card section */
@@ -225,11 +229,11 @@ svg {
 }
 
 .card {
-    /* border: 2px solid #b3aed6; */
     background-color: #ffffff;
     padding: 8px;
     text-align: center;
     border-radius: 8px;
+    padding: 8px;
     box-shadow: inset 0 4px 30px rgba(135, 135, 225, 0.817);
 }
 
@@ -400,6 +404,7 @@ form {
 
 footer {
     background-color: #808080;
+    margin-top: 10px;
 }
 
 .footerContainer {
@@ -492,6 +497,30 @@ footer {
     nav a {
         padding: 0 20px;
     }
+
+    .container {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 1rem 0;
+    }
+
+    footer .footerNav ul li a {
+        font-size: 1.3em;
+    }
+
+    .form {
+        width: 80%;
+    }
 }
 
 @media(max-width:800px){
@@ -503,12 +532,12 @@ footer {
         display: block;
    }
 
-   
     .header {
         flex-direction: column;
         padding: 20px 40px;
         min-height: auto;
         text-align: center;
+        
     }
 
     .left {
@@ -527,11 +556,59 @@ footer {
         max-height: 400px;
         margin-top: 40%;
     }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerContainer {
+        padding: 50px 20px;
+    }
+
+    .socialicons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form {
+        width: 50%;
+        padding: 25px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .services {
+        margin-top: 100px;
+    }
 }
 
-@media(max-width:600px){
+@media(max-width:768px){
     .header {
         padding: 30px 15px;
+        margin-bottom: 20px;
     }
 
     .left h1 {
@@ -547,6 +624,47 @@ footer {
         width: 100%;
     }
     
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 47%r;
+        max-width: 80%;
+    }
+
+    .card img {
+        max-width: 50%;
+        height: 100px;
+    }
+
+    .about-content  h2 {
+       font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .footerNav ul li a {
+        font-size: 1.1em;
+    }
+
+    .footerBottom p {
+        font-size: 14px;
+    }
+    .services {
+        margin-top: 100px;
+    }
+
+    .social-login {
+        display: block;
+    }
 }
 
 
@@ -554,5 +672,53 @@ footer {
     .sidebar {
         width: 100%;
     }
+
+    nav a {
+        padding: 0 15px;
+    }
+    
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .services h1 {
+        font-size: 24px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .footerContainer {
+        padding: 40px 15px;
+    }
+
+    .footerNav ul li a {
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    .socialicons a li {
+        font-size: 1.5rem;
+    }
+
+    .social-login {
+        display: block;
+    }
+
+    
 }
 
