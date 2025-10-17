@@ -588,7 +588,7 @@ footer {
     }
 
     form {
-        width: 50%;
+        width: 80%;
         padding: 25px;
     }
 
@@ -702,6 +702,7 @@ footer {
         font-size: 1rem;
     }
 
+
     .form {
         width: 100%;
         padding: 20px;
@@ -718,7 +719,5 @@ footer {
     .social-login {
         display: block;
     }
-
-    
 }
 
