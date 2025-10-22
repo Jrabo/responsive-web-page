@@ -745,6 +745,10 @@ textarea {
     .services {
         margin-top: 100px;
     }
+
+    .contact-form {
+        max-width: 100%;
+    }
 }
 
 @media(max-width:768px){
@@ -818,8 +822,8 @@ textarea {
         padding: 2rem 1rem;
     }
 
-    .contact-form {
-        width: 100%;
+    form .contact-form {
+        max-width: 70%;
     }
 
     .form-row {
@@ -885,5 +889,8 @@ textarea {
         display: block;
     }
 
+    form .contact-form {
+        max-width: 70%;
+    }
 }
 
