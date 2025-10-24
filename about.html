@@ -63,6 +63,53 @@
         </div>
     </section>
     
+     <div class="accordion-container">
+        <div class="header1">FREQUENTLY ASKED QUESTION</div>
+        <div class="accordion-item">
+            <button class="accordion-header" >Data Analytics</button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam quae, unde suscipit cupiditate autem eaque at. Praesentium impedit dolorem doloremque dolor amet. Numquam quaerat ab in expedita! Vel, deserunt!</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class=" accordion-header" >Web Development</button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, aut corporis reprehenderit excepturi alias, vel blanditiis repudiandae dolor magnam quo aperiam voluptatum. Fugit alias cupiditate eius autem! Minus, deserunt recusandae!</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header" >Graphics</button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt atque aperiam ducimus adipisci pariatur quod sit reprehenderit consequuntur modi eum iusto, facere non exercitationem totam delectus porro officiis ratione.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header" >App Development</button>
+            <div class="accordion-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod debitis nobis dolor ipsum architecto consequatur facere laboriosam qui necessitatibus libero ut, blanditiis minus quae dignissimos sunt nesciunt quidem aut autem?</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Game Development</button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis itaque quam neque architecto deserunt fugiat animi totam nostrum impedit, possimus vero voluptates sint aut quidem ipsa amet. Pariatur, repellendus reprehenderit.</p>
+            </div>
+        </div>
+
+        <div class="accordion-items">
+            <button class="accordion-header">Digital Marketing</button>
+            <div class="accordion-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit, cumque incidunt cum odio, rem voluptas itaque iste maxime veritatis voluptatum enim ea placeat. Totam vitae dolorem laborum rem eveniet.</p>
+            </div>
+        </div>
+    </div> 
+
+    
+
     <footer>
     <div class="footerContainer">
         <div class="socialicons" >
@@ -87,7 +134,7 @@
     </div>
 </footer>
 
-    
+
     <script>
         function showSidebar(){
           const sidebar = document.querySelector('.sidebar') 
@@ -97,6 +144,26 @@
             const sidebar = document.querySelector('.sidebar') 
             sidebar.style.display = 'none'
         }
+
+    const accordions = document.querySelectorAll('.accordion-header')
+
+    accordions.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+
+            //close other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('show');
+                }
+            });
+
+            //toggle the clicked accordion 
+            content.classList.toggle('show');
+
+        });
+    });
+
     </script>
 </body>
 </html>
